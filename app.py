@@ -77,6 +77,14 @@ def render_recommendation_panel_html(rec: str, outfit_result: object) -> None:
     st.markdown(panel_html, unsafe_allow_html=True)
 
 # --- UI ---
+st.markdown(
+    """
+    <div class="vara-header">
+        Vara
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 container = st.container()
 with container:
     cols = st.columns([7, 5], gap="large")
